@@ -1,0 +1,52 @@
+/*
+ * _variables.scss
+ *
+ * This file contains SCSS variables that are used globally in the project.
+ * Keep variables namespaced with the concern of the variable i.e.
+ * $color--<color> or $padding--<definition>.
+ * Variables that are local to a file can be placed in the file itself.
+ */
+
+
+// Breakpoints
+$bp-xs: '380px';
+$bp-s:  '475px';
+$bp-m:  '767px';
+$bp-l:  '991px';
+
+$breakpoint--smallest-only:     '(max-width: #{$bp-xs} )';
+$breakpoint--small-only:        '(min-width: #{$bp-xs} ) and (max-width: #{$bp-s} )';
+$breakpoint--medium-only:       '(min-width: #{$bp-s} ) and (max-width: #{$bp-m} )';
+$breakpoint--medium-and-above:  '(min-width: #{$bp-m} )';
+$breakpoint--large-and-above:   '(min-width: #{$bp-l} )';
+
+
+
+// Colors
+$color--white: #fafafa;
+$color--black: #1d1d1b;
+$color--light-gray: #b8c0c8;
+$color--dark-gray: #4a5463;
+$color--background: #dbdfe2;
+$color--pale-blue: #6d7b81;
+$color--green: #8f9c85;
+$color--light-pink: #d4b2a9;
+$color--accent-1: green;
+$color--accent-2: green;
+$color--link: #ffff00;
+
+
+// Easings
+$ease--in-out: cubic-bezier(0.45, 0.675, 0, 1);
+$ease--in-out-fast: cubic-bezier(0.65, 0.225, 0, 1);
+$ease--in-out-slow: cubic-bezier(0.425, 0.725, 0, 1);
+
+// Metrics
+
+
+// Z-indexes
+$z-index--1: 100;
+$z-index--2: $z-index--1*2;
+$z-index--3: $z-index--1*3;
+$z-index--4: $z-index--1*4;
+

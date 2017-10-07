@@ -1,0 +1,11 @@
+// bg-img();
+// $image:      Required - Path to image
+// $size:       Required - backgrund-size property
+// $position:   Optional - background-position
+
+@mixin bg-img($image, $size, $position: center center, $repeat: no-repeat) {
+    background-image: url(#{$image});
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+}

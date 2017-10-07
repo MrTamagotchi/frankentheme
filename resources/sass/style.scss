@@ -1,0 +1,23 @@
+// Pretty self explanatory I guess! :)
+
+// things that dont really show up
+@import "base/sanitize";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/placeholders";
+@import "layout/grids";
+@import "base/typography";
+
+// modules are wp template parts!
+@import "components/update-notice";
+
+// start styling stuff! 
+@import "base/base";
+@import "layout/global";
+@import "layout/header";
+@import "layout/footer";
+
+// individual pages!
+
+

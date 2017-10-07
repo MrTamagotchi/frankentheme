@@ -1,0 +1,83 @@
+// @font-face {
+//     font-family: 'Addington';
+//     src: url('../fonts/effra-bold/effra-bold.ttf')  format('truetype'),
+//         url('../fonts/effra-bold/effra-bold.woff') format('woff');
+//     font-weight: 800;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Addington';
+//     src:  url('../fonts/effra-light/effra-light.ttf')  format('truetype'),
+//         url('../fonts/effra-light/effra-light.woff') format('woff');
+//     font-weight: 700;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Addington';
+//     src:  url('../fonts/tilde-bold/tilde-bold.ttf')  format('truetype'),
+//         url('../fonts/tilde-bold/tilde-bold.woff') format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Addington';
+//     src:  url('../fonts/tilde-reg/tilde-reg.ttf')  format('truetype'),
+//         url('../fonts/tilde-reg/tilde-reg.woff') format('woff');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+$font-weight--extra-bold: 800;
+$font-weight--bold:       700;
+$font-weight--regular:    400;
+$font-weight--thin:       100;
+
+
+
+body {
+    font-size: 100%;
+    font-family: 'Addington';
+}
+
+h1, %h1, h2, %h2, h3, %h3, h4, %h4, h5, %h5 {
+    line-height: 0.9;
+}
+
+h1, %h1 {
+    
+}
+
+h2, %h2 {
+        
+}
+
+h3, %h3 {
+        
+}
+
+h4, %h4 {
+        
+}
+
+h5, %h5 {
+        
+}
+
+p {
+        
+}
+
+a, a:visited {
+    opacity: 0.8;
+    transition: opacity 500ms ease;
+    cursor: pointer;
+
+    .no-touch &:hover, 
+    .no-touch &:focus {
+        color: $color--link;
+        opacity: 1;
+    }
+}

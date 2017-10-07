@@ -1,0 +1,42 @@
+/* config */
+
+
+/* default */
+/* These are the default module styles, i.e. for every screen size */
+
+@include smallest-only {
+    /*
+    * These styles will only apply to smallest layouts as defined by
+    * $breakpoint--small-only in base/_variables.scss
+    */
+}
+
+
+@include small-only {
+    /*
+    * These styles will only apply to small layouts as defined by
+    * $breakpoint--small-only in base/_variables.scss
+    */
+}
+
+@include medium-only {
+    /*
+    * These styles will only apply to medium layouts as defined by
+    * $breakpoint--medium-only in base/_variables.scss
+    */
+}
+
+@include medium-and-above {
+    /*
+    * These styles will only apply to medium layouts and above as defined by
+    * $breakpoint--medium-and-above in base/_variables.scss
+    */
+  
+}
+
+@include large-and-above {
+    /*
+    * These styles will only apply to large and above layouts as defined by
+    * $breakpoint--large-and-above in base/_variables.scss
+    */
+}

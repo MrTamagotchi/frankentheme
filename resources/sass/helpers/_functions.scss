@@ -1,0 +1,15 @@
+// rem();
+// $pixels:     Required - Initial value in PX
+// $context:    Optional - If you want to change the base EM-size
+
+$browser-context: 16; // Default
+
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem;
+}
+
+// to-string();
+// $value: A value that will be parsed to a string
+@function to-string($value) {
+    @return inspect($value);
+}

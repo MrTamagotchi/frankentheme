@@ -1,0 +1,72 @@
+/* config */
+
+
+/* default */
+/* These are the default module styles, i.e. for every screen size */
+
+.update-notice {
+    position: fixed;
+    z-index: 9999999;
+    background-color: $color--white;
+    color: $color--link;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 120px;
+    text-align: center;
+
+    &__logo {
+        width: 280px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        @extend %h1;
+    }
+
+    &__text {
+        display: block;
+        max-width: 700px;
+        margin: 20px auto;
+    }
+
+    &__link {
+        color: $color--link;
+    }
+}
+
+@include small-only {
+    /*
+    * These styles will only apply to small layouts as defined by
+    * $breakpoint--small-only in base/_variables.scss
+    */
+  
+}
+
+@include medium-only {
+    /*
+    * These styles will only apply to medium layouts as defined by
+    * $breakpoint--medium-only in base/_variables.scss
+    */
+  
+}
+
+@include medium-and-above {
+    /*
+    * These styles will only apply to medium layouts and above as defined by
+    * $breakpoint--medium-and-above in base/_variables.scss
+    */
+  
+}
+
+@include large-and-above {
+    /*
+    * These styles will only apply to large and above layouts as defined by
+    * $breakpoint--large-and-above in base/_variables.scss
+    */
+
+
+}
+
