@@ -10,7 +10,7 @@ module.exports = {
     'browserSync': {
       'host': 'localhost',
       'port': 3000,
-      'proxy': 'http://studiolye-2017.loc:8888/',
+      'proxy': 'http://CHANGE-ME.PLEASE/',
       'files': [
         {
           match: ['../**/*.php'],
