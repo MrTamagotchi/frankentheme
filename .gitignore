@@ -3,6 +3,7 @@
 node_modules
 npm-debug.log
 .nyc_output
+.tmp
 
 .DS_Store
 Thumbs.db

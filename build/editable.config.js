@@ -6,11 +6,15 @@ module.exports = {
     ]
   },
 
+  'externals': {
+    'jquery': 'jQuery'
+  },
+
   'settings': {
     'browserSync': {
       'host': 'localhost',
       'port': 3000,
-      'proxy': 'http://CHANGE-ME.PLEASE/',
+      'proxy': 'http://gatsbymaze.loc:8888/',
       'files': [
         {
           match: ['../**/*.php'],

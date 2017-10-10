@@ -46,9 +46,8 @@ module.exports = merge({
      *
      * @type {Object}
      */
-    // externals: {
-    //     jquery: 'jQuery',
-    // },
+    externals: {
+    },
 
     /**
      * Settings of other build features.

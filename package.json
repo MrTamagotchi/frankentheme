@@ -6,8 +6,9 @@
         "prod": "yarn run production",
         "production": "cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.config.js",
         "watch": "yarn run development -- --watch && webpack-dev-server --progress --colors",
-        "test": "cross-env NODE_ENV=test mocha --require babel-register --require babel-polyfill resources/js/**/*.test.js",
-        "coverage": "cross-env NODE_ENV=test nyc report --reporter=html --reporter=text "
+        "test": "mocha-webpack",
+        "coverage": "cross-env NODE_ENV=coverage nyc --reporter=html --reporter=text mocha-webpack",
+        "cover": "yarn run coverage"
     },
     "dependencies": {},
     "devDependencies": {
@@ -26,29 +27,30 @@
         "copy-webpack-plugin": "^4.0.1",
         "cross-env": "^5.0.1",
         "css-loader": "^0.28.0",
-        "extract-text-webpack-plugin": "^2.1.0",
+        "extract-text-webpack-plugin": "2.1.2",
         "file-loader": "^0.11.1",
         "imagemin-webpack-plugin": "^1.4.4",
         "img-loader": "^2.0.0",
         "isdev": "^1.0.1",
-        "mocha": "^4.0.1",
+        "istanbul-instrumenter-loader": "^3.0.0",
+        "jsdom": "11.1.0",
+        "mocha": "3.0.0",
+        "mocha-jsdom": "^1.1.0",
+        "mocha-webpack": "next",
         "node-sass": "^4.5.2",
         "nyc": "^11.2.1",
         "postcss-loader": "^1.3.3",
         "sass-loader": "^6.0.3",
         "style-loader": "^0.16.1",
         "stylelint-webpack-plugin": "^0.7.0",
-        "webpack": "^2.3.3",
+        "webpack": "2.3.3",
         "webpack-dev-server": "^2.4.4",
-        "webpack-merge": "^4.1.0"
+        "webpack-merge": "^4.1.0",
+        "webpack-node-externals": "^1.6.0"
     },
     "nyc": {
-        "require": [
-            "babel-register"
-        ],
-        "reporter": [
-            "html",
-            "text"
+        "include": [
+            "resources/js/**/*.js"
         ],
         "report-dir": "./.nyc_output/coverage",
         "sourceMap": false,
