@@ -13,4 +13,4 @@ A WP starter theme initally based on [Bones Theme](https://themble.com/bones/) a
   * Coverage reports with Istanbul/NYC
 
 ## Disclaimer
-This is not meant to be an official theme in any way sort or form, I just keep it here for future reference.
+This is not meant to be an official theme in any way sort or form. Files are not always consistent, and there are an insane amount of TODO's and FIX ME's in the backlog. One day my baby will be complete, but in the meantime I'll keep it here for future reference.
